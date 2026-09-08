@@ -1,0 +1,116 @@
+# QAFood — Testes Automatizados com Maestro
+
+Suíte de testes end-to-end para o aplicativo **QA Food**, uma versão do iFood utilizada como projeto de estudo, desenvolvida pela escola **QAZANDO** (professores Eduardo Finotti e Hebert Soares).
+
+Todos os testes e a estrutura deste repositório foram criados por **Diogo Amâncio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando Android Studio, WSL (Linux) e Maestro.
+
+---
+
+## 📱 Sobre o app
+
+O QA Food simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário: login, busca de restaurantes, navegação por cardápio, carrinho de compras e finalização de pedido.
+
+---
+
+## 🛠️ Ambiente e rotina diária
+
+O ambiente de testes combina **emulador Android no Windows** + **WSL (Linux)** + **Maestro CLI/Studio**.
+
+### 1. Abrir o emulador (PowerShell)
+```powershell
+cd $env:LOCALAPPDATA\Android\Sdk\emulator
+.\emulator.exe -avd Pixel_4 -gpu swiftshader_indirect
+```
+Aguarde o emulador carregar completamente antes de seguir. **Não** use o botão ▶ do Android Studio — sempre use esse comando.
+
+### 2. Conectar o WSL ao emulador
+```bash
+adb kill-server
+adb connect <IP>:25555
+adb devices
+```
+> ⚠️ O IP não é fixo — ele pode mudar a cada reinício do Windows/WSL. Descubra o valor atual com:
+> ```bash
+> ip route show default | awk '{print $3}'
+> ```
+> Resultado esperado do `adb devices`: `<IP>:25555   device`
+
+### 3. Executar os testes com Maestro
+```bash
+maestro --host <IP> test <caminho-do-arquivo>.yaml
+```
+
+### 4. Abrir o Maestro Studio (interface visual, opcional)
+```bash
+cd ~/Downloads
+./MaestroStudio.AppImage
+```
+Selecione o device `<IP>:25555` na lista.
+
+> ⚠️ O streaming de tela ao vivo dentro do Studio não funciona neste ambiente (erro de gRPC pela rede) — os testes rodam normalmente mesmo assim. Para acompanhar visualmente, use a janela do emulador no Windows.
+
+**Ordem diária:** PowerShell (emulador) → WSL/ADB (conexão) → Maestro/Maestro Studio (execução)
+
+---
+
+## 📁 Estrutura do repositório
+
+```
+Maestro/
+├── 1 - Feature_Login/
+├── 2 - Feature_Lojas/
+├── 3 - Feature_Cardápio/
+├── 4 - Feature_Sacola (Carrinho)/
+└── 5 - Feature Pedido/
+```
+
+Cada teste que depende de login reutiliza o mesmo flow base via `runFlow`, evitando duplicação:
+```yaml
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+```
+> 📌 O caminho do `runFlow` é sempre **relativo ao arquivo que o chama**. Testes salvos dentro de uma subpasta de feature usam `../1 - Feature_Login/...` (sobem um nível antes de entrar em `1 - Feature_Login`). Testes salvos direto na raiz `Maestro/` usam o caminho sem `../`.
+
+---
+
+## 🧭 A jornada do usuário e as 5 Features
+
+```
+Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
+```
+
+| Feature | O que valida | Papel na jornada |
+|---|---|---|
+| **1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
+| **2. Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
+| **3. Cardápio** | Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
+| **4. Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
+| **5. Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
+
+### 1. Feature Login
+Valida o processo de autenticação e o comportamento dos campos e botão de acesso: campos vazios, credenciais inválidas, formatos de e-mail, sensibilidade a maiúsculas/minúsculas, espaços em branco, limites de caracteres, caminho feliz, recuperação de erro, cliques múltiplos/duplo toque, tentativas repetidas de senha incorreta, e interações com o sistema operacional (Enter, Home, background, rotação de tela).
+
+### 2. Feature Lojas
+Valida exibição, navegação e pesquisa dos restaurantes: acesso à lista após login, scroll, localização de restaurantes específicos, busca por nome completo/parcial/inexistente, espaços em branco, caracteres especiais, sensibilidade a maiúsculas/minúsculas, buscas consecutivas, permissão de localização (aceitar/recusar/não solicitar novamente), e persistência de sessão após fechar/reabrir o app.
+
+### 3. Feature Cardápio
+Valida o acesso aos restaurantes e o comportamento dos produtos: acesso ao cardápio de diferentes restaurantes, bloqueio sem endereço selecionado, retorno à tela anterior, adição de um ou vários produtos, contador de produtos, produtos diferentes e duplicados, nome/preço/descrição, scroll, persistência de itens após navegação, manutenção do contador após rotação de tela, duplo toque rápido, e cabeçalho do restaurante.
+
+### 4. Feature Sacola (Carrinho)
+Valida o funcionamento do carrinho: abrir com/sem produtos, adicionar o mesmo produto múltiplas vezes, quantidade e preço, adicionar/remover, confirmar/cancelar limpeza, produtos diferentes, retorno ao cardápio sem perder itens, botão Limpar com carrinho vazio, readicionar itens, rotação de tela, e cálculo de subtotal em diferentes combinações.
+
+### 5. Feature Pedido
+Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtotal/taxa de entrega/total, produtos no pedido, formas de pagamento (cartão de crédito, dinheiro), alerta ao tentar finalizar sem forma de pagamento, tela de "Pedido realizado" (previsão de entrega, status, endereço, detalhes, pagamento, total), retorno à tela de Lojas, rotação de tela pós-conclusão, e retorno da confirmação sem finalizar (carrinho permanece intacto).
+
+---
+
+## 💡 Aprendizados técnicos (para não repetir os mesmos erros)
+
+- **Sintaxe YAML**: `appId` fica no cabeçalho do arquivo (antes do `---`), nunca dentro da lista de comandos. Seletores como `id:` precisam de indentação correta e espaço após os dois-pontos (`id: "email"`, não `id:"email"`).
+- **`tapOn` não digita** — sempre seguido de `inputText` para preencher campos.
+- **Ambiguidade de seletores**: `rightOf: "texto"` e `point: "x%,y%"` são frágeis após scroll (podem clicar no elemento errado sem gerar erro). Prefira `id` real do elemento — descoberto via `maestro hierarchy` ou pelo Inspector do Maestro Studio.
+- **`scrollUntilVisible` é just-in-time**: revelar um elemento não garante que os próximos também fiquem visíveis. Use um `scrollUntilVisible` por elemento que precisa ser tocado/validado.
+- **Alertas e pop-ups de confirmação**: título e corpo do modal geralmente são apenas `assertVisible` (informativos); só o botão de ação final é `tapOn`.
+- **IDs confirmados no app**: `add-item-buttom` (sic — contém erro de digitação no próprio app), `open-cart-button`, `back-button`.
+- **Mensagens reais confirmadas**: `"Erro ao realizar login"` (erro genérico de autenticação), `"CUPOM inválido"`, `"Selecione uma forma de pagamento"`.
+- Fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login** neste app — é necessário refazer o `runFlow` de login mesmo sem limpar o estado.
