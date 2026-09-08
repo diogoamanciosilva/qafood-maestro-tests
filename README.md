@@ -104,7 +104,7 @@ Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtota
 
 ---
 
-## 💡 Aprendizados técnicos (para não repetir os mesmos erros)
+## 💡 Aprendizados técnicos 
 
 - **Sintaxe YAML**: `appId` fica no cabeçalho do arquivo (antes do `---`), nunca dentro da lista de comandos. Seletores como `id:` precisam de indentação correta e espaço após os dois-pontos (`id: "email"`, não `id:"email"`).
 - **`tapOn` não digita** — sempre seguido de `inputText` para preencher campos.
