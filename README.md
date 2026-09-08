@@ -10,6 +10,9 @@ Todos os testes e a estrutura deste repositório foram criados por **Diogo Amân
 
 O QA Food simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário: login, busca de restaurantes, navegação por cardápio, carrinho de compras e finalização de pedido.
 
+<img width="405" height="860" alt="image" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
+
+
 ---
 
 ## 🛠️ Ambiente e rotina diária
