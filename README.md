@@ -1,6 +1,6 @@
-# QAFood — Testes Automatizados com Maestro
+# qaFood — Testes Automatizados com Maestro
 
-Suíte de testes end-to-end para o aplicativo **QA Food**, uma versão do iFood utilizada como projeto de estudo, desenvolvida pela escola **QAZANDO** (professores Eduardo Finotti e Hebert Soares).
+Suíte de testes end-to-end para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela escola **QAZANDO** (professores Eduardo Finotti e Hebert Soares).
 
 Todos os testes e a estrutura deste repositório foram criados por **Diogo Amâncio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando Android Studio, WSL (Linux) e Maestro.
 
@@ -8,7 +8,10 @@ Todos os testes e a estrutura deste repositório foram criados por **Diogo Amân
 
 ## 📱 Sobre o app
 
-O QA Food simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário: login, busca de restaurantes, navegação por cardápio, carrinho de compras e finalização de pedido.
+O qaFood simula um aplicativo de delivery completo (iFood), cobrindo a jornada real de um usuário: login, busca de restaurantes, navegação por cardápio, carrinho de compras e finalização de pedido.
+
+<img width="405" height="860" alt="image" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
+
 
 ---
 
@@ -61,7 +64,7 @@ Maestro/
 ├── 2 - Feature_Lojas/
 ├── 3 - Feature_Cardápio/
 ├── 4 - Feature_Sacola (Carrinho)/
-└── 5 - Feature Pedido/
+└── 5 - Feature_Pedido/
 ```
 
 Cada teste que depende de login reutiliza o mesmo flow base via `runFlow`, evitando duplicação:
@@ -81,9 +84,9 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
-| **1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
+|**1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
 | **2. Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
-| **3. Cardápio** | Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
+|**3. Cardápio**        | Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?"                                  |
 | **4. Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
 | **5. Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
 
@@ -104,7 +107,7 @@ Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtota
 
 ---
 
-## 💡 Aprendizados técnicos (para não repetir os mesmos erros)
+## 💡 Aprendizados técnicos 
 
 - **Sintaxe YAML**: `appId` fica no cabeçalho do arquivo (antes do `---`), nunca dentro da lista de comandos. Seletores como `id:` precisam de indentação correta e espaço após os dois-pontos (`id: "email"`, não `id:"email"`).
 - **`tapOn` não digita** — sempre seguido de `inputText` para preencher campos.
