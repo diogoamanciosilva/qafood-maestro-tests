@@ -84,7 +84,7 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
-| **1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
+|**1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
 | **2. Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
 | **3. Cardápio** | Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
 | **4. Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
