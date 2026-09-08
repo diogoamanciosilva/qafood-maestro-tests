@@ -83,7 +83,7 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 |---|---|---|
 | **1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
 | **2. Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
-| **3. Cardápio** | Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
+| **3. Cardápio**| Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
 | **4. Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
 | **5. Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
 
