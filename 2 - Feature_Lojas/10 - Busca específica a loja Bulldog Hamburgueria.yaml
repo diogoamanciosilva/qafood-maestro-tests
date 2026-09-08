@@ -1,0 +1,18 @@
+#Grupo 3 — Busca aos restaurantes
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- scroll
+- scrollUntilVisible:
+    element: "Bulldog Hamburgueria"
+    direction: DOWN
+- assertVisible: "Bulldog Hamburgueria"

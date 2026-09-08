@@ -1,0 +1,49 @@
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+- assertVisible: "1 Produtos"
+- tapOn:
+    id: "open-cart-button"
+- assertVisible: "Pastel de carne"
+- tapOn: "CONFIRMAR PEDIDO"
+- assertVisible: "Pastelaria da Maria"
+- assertVisible: "Subtotal"
+- assertVisible: "R$ 28,00"
+- assertVisible: "Taxa de entrega"
+- assertVisible:
+    text: "R$ 5,00"
+    index: 1
+- assertVisible:
+    text: "Total"
+    index: 1
+- assertVisible: "R$ 33,00"
+- assertVisible: "Itens"
+- assertVisible: "1 ítens adicionados"
+- scrollUntilVisible:
+    element: "Cartão de crédito"
+    direction: DOWN
+- assertVisible: "Forma de pagamento"
+- assertVisible: "Cartão de crédito"
+- scrollUntilVisible:
+    element: "Dinheiro"
+    direction: DOWN
+- assertVisible: "Dinheiro"
+- tapOn: "Cartão de crédito"
+- scrollUntilVisible:
+    element: "Endereço"
+    direction: DOWN
+- assertVisible: "Endereço"
+- scrollUntilVisible:
+    element: "Av. Governador A. Konder, 20"
+    direction: DOWN
+- assertVisible: "Av. Governador A. Konder, 20"
+- scrollUntilVisible:
+    element: "FAZER PEDIDO"
+    direction: DOWN
+- tapOn: "FAZER PEDIDO"

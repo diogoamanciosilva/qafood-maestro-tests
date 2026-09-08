@@ -1,0 +1,13 @@
+# 1 - Acessar cardápio de restaurante diferente (Bulldog Hamburgueria)
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- scrollUntilVisible:
+    element: "Bulldog Hamburgueria"
+    direction: DOWN
+- tapOn: "Bulldog Hamburgueria"
+- assertVisible: "Bulldog Hamburgueria"
+- assertVisible: "Cardápio"

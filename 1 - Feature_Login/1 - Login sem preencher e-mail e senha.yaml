@@ -1,0 +1,8 @@
+#Grupo 1 — Validação de campos vazios (base)
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"

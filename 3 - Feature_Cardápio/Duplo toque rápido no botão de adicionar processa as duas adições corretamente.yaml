@@ -1,0 +1,12 @@
+# 13 - Duplo toque rápido no botão de adicionar processa as duas adições corretamente
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- doubleTapOn:
+    id: "add-item-buttom"
+    index: 0
+- assertVisible: "2 Produtos"

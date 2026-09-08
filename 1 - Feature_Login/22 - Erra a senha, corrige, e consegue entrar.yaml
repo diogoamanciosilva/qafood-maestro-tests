@@ -1,0 +1,21 @@
+#Grupo 8 — Edição e recuperação de erro
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "senhaerrada"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"
+- tapOn:
+    id: "password"
+- eraseText
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Selecione seu endereço..."

@@ -1,0 +1,14 @@
+#Grupo 3 — Credenciais preenchidas, porém inválidas
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste'@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"

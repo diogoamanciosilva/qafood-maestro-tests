@@ -1,0 +1,15 @@
+#Grupo 11 — Interações do sistema operacional (mais complexos, menos previsíveis)
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- pressKey: "Home"
+- launchApp:
+    appId: "com.qazandoqafood"
+- takeScreenshot: resultado-apos-background

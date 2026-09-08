@@ -1,0 +1,23 @@
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+    index: 0
+- tapOn:
+    id: "add-item-buttom"
+    index: 2
+- assertVisible: "2 Produtos"
+- tapOn:
+    id: "open-cart-button"
+- assertVisible: "Pastel de carne"
+- assertVisible: "Pastel de queijo"
+- tapOn: "Limpar"
+- assertVisible: "Quer esvaziar seu carrinho?"
+- assertVisible: "Limpar carrinho"
+- tapOn: "LIMPAR"
+- assertVisible: "Você não possui produtos no carrinho!"

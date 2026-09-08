@@ -1,0 +1,16 @@
+#Grupo 2 — Navegação e Visibilidade da Lista 
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- scrollUntilVisible:
+    element: "Nonno Bepe Pizzaria"
+    direction: DOWN

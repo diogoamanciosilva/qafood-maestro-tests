@@ -1,0 +1,17 @@
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- tapOn: "Pesquise seu restaurante..."
+- assertVisible: "Pesquise seu restaurante..."
+- inputText: "Pastelaria"
+- scrollUntilVisible:
+    element: "Pastelaria da Maria"
+- assertVisible: "Pastelaria da Maria"

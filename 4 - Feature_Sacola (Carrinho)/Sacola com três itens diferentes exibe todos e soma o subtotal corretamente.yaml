@@ -1,0 +1,22 @@
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+    index: 0
+- tapOn:
+    id: "add-item-buttom"
+    index: 1
+- tapOn:
+    id: "add-item-buttom"
+    index: 2
+- tapOn:
+    id: "open-cart-button"
+- assertVisible: "Pastel de carne"
+- assertVisible: "Pastel de frango"
+- assertVisible: "Pastel de queijo"
+- assertVisible: "R$ 68,00"

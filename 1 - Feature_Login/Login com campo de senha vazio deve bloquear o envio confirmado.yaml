@@ -1,0 +1,11 @@
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Senha"
+- assertVisible: "Erro ao realizar login"
+- assertNotVisible: "Pesquise seu restaurante..."
