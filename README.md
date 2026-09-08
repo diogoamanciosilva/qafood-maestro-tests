@@ -81,11 +81,11 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
-| **1.Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
-| **2.Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
-| **3.Cardápio**| Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
-| **4.Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
-| **5.Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
+| **1. Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
+| **2. Lojas** | Listagem, busca, navegação e permissão de localização | "Onde quero pedir?" |
+| **3. Cardápio**| Produtos, carrinho, contador, navegação dentro do restaurante | "O que vou comer?" |
+| **4. Sacola** | Gerenciamento do carrinho, subtotal, persistência | "Revisar minha compra" |
+| **5. Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
 
 ### 1. Feature Login
 Valida o processo de autenticação e o comportamento dos campos e botão de acesso: campos vazios, credenciais inválidas, formatos de e-mail, sensibilidade a maiúsculas/minúsculas, espaços em branco, limites de caracteres, caminho feliz, recuperação de erro, cliques múltiplos/duplo toque, tentativas repetidas de senha incorreta, e interações com o sistema operacional (Enter, Home, background, rotação de tela).
