@@ -40,29 +40,34 @@ A comunicação dos testes depende apenas de:
 **Emulador rodando → ADB conectado via rede → Maestro apontando para o host correto**
 
 O APK só precisa ser instalado nos seguintes casos:
-
-```1. Emulador novo, sem o app instalado;
+1. Emulador novo, sem o app instalado;
 2. Reset/Wipe do emulador, que remove os aplicativos instalados;
 3. Necessidade de reinstalar o aplicativo;
-4. Necessidade de trocar a versão do aplicativo.```
+4. Necessidade de trocar a versão do aplicativo.
 
 Para instalar o APK:
 
 Confirme que o emulador está rodando e conectado:
-
+```bash
 adb devices
-
+```
 Instale o APK no device correto:
 
+```bash
 adb -s <IP>:25555 install caminho/para/qafoodcompletao.apk
+```
 
 Confirme que a instalação foi realizada:
 
+```bash
 adb shell pm list packages | grep qazandoqafood
+```
 
 O resultado esperado é:
 
+```bash
 package:com.qazandoqafood
+```
 
 📌 Importante: depois que o aplicativo estiver instalado, o arquivo .apk não precisa ser utilizado novamente para executar os testes. O Maestro interage diretamente com o aplicativo por meio do appId: com.qazandoqafood.
 
@@ -157,3 +162,33 @@ Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtota
 - **IDs confirmados no app**: `add-item-buttom` (sic — contém erro de digitação no próprio app), `open-cart-button`, `back-button`.
 - **Mensagens reais confirmadas**: `"Erro ao realizar login"` (erro genérico de autenticação), `"CUPOM inválido"`, `"Selecione uma forma de pagamento"`.
 - Fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login** neste app — é necessário refazer o `runFlow` de login mesmo sem limpar o estado.
+
+## 🎯 Objetivo da suíte
+
+A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro do qaFood:
+
+┌─────────┐
+│  Login  │
+└────┬────┘
+     ↓
+┌─────────┐
+│  Lojas  │
+└────┬────┘
+     ↓
+┌──────────┐
+│ Cardápio │
+└────┬─────┘
+     ↓
+┌─────────┐
+│ Sacola  │
+└────┬────┘
+     ↓
+┌─────────┐
+│ Pedido  │
+└────┬────┘
+     ↓
+┌────────────────┐
+│ Acompanhamento │
+└────────────────┘
+
+Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
