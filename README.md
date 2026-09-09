@@ -129,6 +129,7 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 ```
 Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
 
+
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
 |**1.Login** | Autenticação, campos, erros de validação, comportamento do botão de acesso | Ponto de entrada — "quero acessar o app" |
