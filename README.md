@@ -122,9 +122,12 @@ Cada teste que depende de login reutiliza o mesmo flow base via `runFlow`, evita
 
 ## 🧭 A jornada do usuário e as 5 Features
 
+A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro do qaFood:
+
 ```
 Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 ```
+Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
@@ -161,11 +164,3 @@ Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtota
 - **IDs confirmados no app**: `add-item-buttom` (sic — contém erro de digitação no próprio app), `open-cart-button`, `back-button`.
 - **Mensagens reais confirmadas**: `"Erro ao realizar login"` (erro genérico de autenticação), `"CUPOM inválido"`, `"Selecione uma forma de pagamento"`.
 - Fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login** neste app — é necessário refazer o `runFlow` de login mesmo sem limpar o estado.
-
-## 🎯 Objetivo da suíte
-
-A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro do qaFood:
-
-Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
-
-Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
