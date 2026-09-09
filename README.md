@@ -33,19 +33,18 @@ cd $env:LOCALAPPDATA\Android\Sdk\emulator
 .\emulator.exe -avd Pixel_4 -gpu swiftshader_indirect
 ```
 Aguarde o emulador carregar completamente antes de seguir. **Não** use o botão ▶ do Android Studio — sempre use esse comando.
-
 O arquivo .apk é apenas o **instalador do aplicativo.** Ele **não faz parte da conexão entre Windows, WSL, ADB e Maestro.**
 
 A comunicação dos testes depende apenas de:
 **Emulador rodando → ADB conectado via rede → Maestro apontando para o host correto**
 
-O APK só precisa ser instalado nos seguintes casos:
+**O APK só precisa ser instalado nos seguintes casos:**
 1. Emulador novo, sem o app instalado;
 2. Reset/Wipe do emulador, que remove os aplicativos instalados;
 3. Necessidade de reinstalar o aplicativo;
 4. Necessidade de trocar a versão do aplicativo.
 
-Para instalar o APK:
+**Para instalar o APK:**
 
 Confirme que o emulador está rodando e conectado:
 ```bash
