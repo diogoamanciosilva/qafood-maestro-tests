@@ -166,28 +166,6 @@ Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtota
 
 A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro do qaFood:
 
-┌─────────┐
-│  Login  │
-└────┬────┘
-     ↓
-┌─────────┐
-│  Lojas  │
-└────┬────┘
-     ↓
-┌──────────┐
-│ Cardápio │
-└────┬─────┘
-     ↓
-┌─────────┐
-│ Sacola  │
-└────┬────┘
-     ↓
-┌─────────┐
-│ Pedido  │
-└────┬────┘
-     ↓
-┌────────────────┐
-│ Acompanhamento │
-└────────────────┘
+Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 
 Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
