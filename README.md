@@ -26,7 +26,48 @@ cd $env:LOCALAPPDATA\Android\Sdk\emulator
 ```
 Aguarde o emulador carregar completamente antes de seguir. **Não** use o botão ▶ do Android Studio — sempre use esse comando.
 
-### 2. Conectar o WSL ao emulador
+
+### 2. Instalação do app (qafoodcompletao.apk)
+```powershell
+cd $env:LOCALAPPDATA\Android\Sdk\emulator
+.\emulator.exe -avd Pixel_4 -gpu swiftshader_indirect
+```
+Aguarde o emulador carregar completamente antes de seguir. **Não** use o botão ▶ do Android Studio — sempre use esse comando.
+
+O arquivo .apk é apenas o instalador do aplicativo. Ele não faz parte da conexão entre Windows, WSL, ADB e Maestro.
+
+A comunicação dos testes depende apenas de:
+
+Emulador rodando → ADB conectado via rede → Maestro apontando para o host correto
+
+O APK só precisa ser instalado nos seguintes casos:
+
+Emulador novo, sem o app instalado;
+Reset/Wipe do emulador, que remove os aplicativos instalados;
+Necessidade de reinstalar o aplicativo;
+Necessidade de trocar a versão do aplicativo.
+
+Para instalar o APK:
+
+Confirme que o emulador está rodando e conectado:
+
+adb devices
+
+Instale o APK no device correto:
+
+adb -s <IP>:25555 install caminho/para/qafoodcompletao.apk
+
+Confirme que a instalação foi realizada:
+
+adb shell pm list packages | grep qazandoqafood
+
+O resultado esperado é:
+
+package:com.qazandoqafood
+
+📌 Importante: depois que o aplicativo estiver instalado, o arquivo .apk não precisa ser utilizado novamente para executar os testes. O Maestro interage diretamente com o aplicativo por meio do appId: com.qazandoqafood.
+
+### 3. Conectar o WSL ao emulador
 ```bash
 adb kill-server
 adb connect <IP>:25555
@@ -38,12 +79,12 @@ adb devices
 > ```
 > Resultado esperado do `adb devices`: `<IP>:25555   device`
 
-### 3. Executar os testes com Maestro
+### 4. Executar os testes com Maestro
 ```bash
 maestro --host <IP> test <caminho-do-arquivo>.yaml
 ```
 
-### 4. Abrir o Maestro Studio (interface visual, opcional)
+### 5. Abrir o Maestro Studio (interface visual, opcional)
 ```bash
 cd ~/Downloads
 ./MaestroStudio.AppImage
