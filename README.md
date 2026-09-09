@@ -34,18 +34,17 @@ cd $env:LOCALAPPDATA\Android\Sdk\emulator
 ```
 Aguarde o emulador carregar completamente antes de seguir. **Não** use o botão ▶ do Android Studio — sempre use esse comando.
 
-O arquivo .apk é apenas o instalador do aplicativo. Ele não faz parte da conexão entre Windows, WSL, ADB e Maestro.
+O arquivo .apk é apenas o **instalador do aplicativo.** Ele **não faz parte da conexão entre Windows, WSL, ADB e Maestro.**
 
 A comunicação dos testes depende apenas de:
-
-Emulador rodando → ADB conectado via rede → Maestro apontando para o host correto
+**Emulador rodando → ADB conectado via rede → Maestro apontando para o host correto**
 
 O APK só precisa ser instalado nos seguintes casos:
 
-Emulador novo, sem o app instalado;
-Reset/Wipe do emulador, que remove os aplicativos instalados;
-Necessidade de reinstalar o aplicativo;
-Necessidade de trocar a versão do aplicativo.
+```1. Emulador novo, sem o app instalado;
+2. Reset/Wipe do emulador, que remove os aplicativos instalados;
+3. Necessidade de reinstalar o aplicativo;
+4. Necessidade de trocar a versão do aplicativo.```
 
 Para instalar o APK:
 
