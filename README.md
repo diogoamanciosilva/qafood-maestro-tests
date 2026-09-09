@@ -2,7 +2,7 @@
 
 Suíte de testes end-to-end para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela escola **Qazando** (professores Eduardo Finotti e Hebert Soares).
 
-Todos os testes e a estrutura deste repositório foram criados por **Diogo Amâncio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando Android Studio, WSL (Linux) e Maestro.
+Todos os testes e a estrutura deste repositório foram criados por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando Android Studio, WSL (Linux) e Maestro.
 
 ---
 
