@@ -1,0 +1,14 @@
+#2. Validação de formato e conteúdo
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: " "
+- tapOn:
+    id: "password"
+- inputText: " "
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"

@@ -1,0 +1,18 @@
+# 3. Navegação dentro e fora do cardápio
+
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- scroll
+- scrollUntilVisible:
+    element: "Água sem gás"
+    direction: DOWN
+- assertVisible: "Água sem gás"
+- scrollUntilVisible:
+    element: "Pastel de carne"
+    direction: UP
+- assertVisible: "Pastel de carne"

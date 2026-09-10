@@ -1,0 +1,16 @@
+# 4. Adição de um produto ao carrinho
+
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+- assertVisible: "1 Produtos"
+- tapOn:
+    id: "back-button"
+- tapOn: "Pastelaria da Maria"
+- assertVisible: "1 Produtos"

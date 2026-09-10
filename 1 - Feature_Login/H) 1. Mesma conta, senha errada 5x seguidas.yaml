@@ -1,0 +1,17 @@
+#8. Bloqueio por tentativas de senha
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- repeat:
+    times: 5
+    commands:
+      - tapOn:
+          id: "password"
+      - inputText: "senhaerrada"
+      - tapOn:
+          id: "login-button"
+      - assertVisible: "Erro ao realizar login"

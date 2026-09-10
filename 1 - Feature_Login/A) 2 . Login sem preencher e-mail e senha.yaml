@@ -1,0 +1,8 @@
+#1. Fluxo básico
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"

@@ -1,0 +1,13 @@
+# 4. Busca básica
+
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn:
+    text: "Pesquise seu restaurante..."
+- assertVisible:
+    text: "Pesquise seu restaurante..."
+- inputText: "a"
+- assertVisible:
+    text: "Pastelaria da Maria"

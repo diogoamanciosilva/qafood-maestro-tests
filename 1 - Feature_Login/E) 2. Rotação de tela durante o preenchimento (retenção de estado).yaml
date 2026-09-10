@@ -1,0 +1,16 @@
+#5. Interações com teclado e sistema operacional
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- setOrientation: LANDSCAPE_LEFT
+- setOrientation: PORTRAIT
+- tapOn:
+    id: "login-button"
+- assertVisible: "Selecione seu endereço..."

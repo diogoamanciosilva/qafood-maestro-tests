@@ -1,0 +1,24 @@
+# 3. Cancelamento da finalização e preservação do carrinho
+
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+- assertVisible: "1 Produtos"
+- assertVisible:
+    text: "R$ 28,00"
+    index: 1
+- tapOn:
+    id: "open-cart-button"
+- tapOn: "CONFIRMAR PEDIDO"
+- assertVisible: "Subtotal"
+- pressKey: "Back"
+- assertVisible: "Pastel de carne"
+- assertVisible: "1x"
+- assertVisible: "R$ 28,00"
+

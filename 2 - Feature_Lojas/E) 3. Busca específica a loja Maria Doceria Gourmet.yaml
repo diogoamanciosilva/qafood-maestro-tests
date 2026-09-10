@@ -1,0 +1,19 @@
+# 5. Busca por restaurantes específicos
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- tapOn: "Pesquise seu restaurante..."
+- assertVisible: "Pesquise seu restaurante..."
+- inputText: "Maria Doceria Gourmet"
+- scrollUntilVisible:
+    element: "Maria Doceria Gourmet"
+- assertVisible: "Maria Doceria Gourmet"

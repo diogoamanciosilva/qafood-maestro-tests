@@ -1,0 +1,11 @@
+#6. Cliques repetidos e comportamento de interface
+
+appId: com.qazandoqafood
+---
+- launchApp
+- repeat:
+    times: 5
+    commands:
+      - tapOn:
+          id: "login-button"
+- assertVisible: "Erro ao realizar login"

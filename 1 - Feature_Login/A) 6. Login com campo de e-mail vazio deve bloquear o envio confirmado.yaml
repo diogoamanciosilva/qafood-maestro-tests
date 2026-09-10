@@ -1,0 +1,13 @@
+#1. Fluxo básico
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- assertVisible: "E-mail"
+- assertVisible: "Erro ao realizar login"
+- assertNotVisible: "Pesquise seu restaurante..."

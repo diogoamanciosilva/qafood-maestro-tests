@@ -1,0 +1,14 @@
+#3. Validação de senha
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "esteehumteemailmuitolongoparatestarolimitedecaracteresaceitospelocampo1234567890@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Erro ao realizar login"

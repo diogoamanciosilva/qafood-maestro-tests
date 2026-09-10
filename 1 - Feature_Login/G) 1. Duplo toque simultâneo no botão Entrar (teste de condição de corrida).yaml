@@ -1,0 +1,14 @@
+#7. Concorrência e condição de corrida
+
+appId: com.qazandoqafood
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- doubleTapOn:
+    id: "login-button"
+- assertVisible: "Selecione seu endereço..."

@@ -1,0 +1,21 @@
+
+# 8. Persistência e ciclo de vida do aplicativo
+
+appId: com.qazandoqafood
+---
+- runFlow:
+    file: ../1 - Feature_Login/20 - Login com credenciais corretas.yaml
+- assertVisible: "Pesquise seu restaurante..."
+- launchApp:
+    clearState: false
+- assertVisible:
+    id: "email"
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: "123456"
+- tapOn:
+    id: "login-button"
+- assertVisible: "Pesquise seu restaurante..."
