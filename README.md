@@ -157,7 +157,7 @@ Os testes não validam apenas funcionalidades isoladas, mas também simulam comp
 
 As informações a seguir apresentam a estrutura completa da suíte de testes do qaFood, organizada em cinco Features que representam, em sequência, a jornada do usuário no aplicativo. Cada Feature possui um conjunto de subtópicos que agrupa os cenários por funcionalidade e nível crescente de complexidade, permitindo visualizar de forma clara o que é validado em cada etapa, desde o login até a finalização e o acompanhamento do pedido.
 
-## Features
+# Features
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
@@ -169,7 +169,7 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 ---
 
-# 1. Feature Login
+## 1. Feature Login
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos**.
 
@@ -207,7 +207,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 ---
 
-# 2. Feature Lojas
+## 2. Feature Lojas
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos**.
 
@@ -245,7 +245,7 @@ Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequênci
 
 ---
 
-# 3. Feature Cardápio
+## 3. Feature Cardápio
 
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos**.
 
@@ -279,7 +279,7 @@ Duplo toque rápido no botão de adicionar.
 
 ---
 
-# 4. Feature Sacola (Carrinho)
+## 4. Feature Sacola (Carrinho)
 
 Valida o funcionamento do carrinho, organizada em **7 subtópicos**.
 
@@ -313,7 +313,7 @@ Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao f
 
 ---
 
-# 5. Feature Pedido
+## 5. Feature Pedido
 
 Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos**.
 
