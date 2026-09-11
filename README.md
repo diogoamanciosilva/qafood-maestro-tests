@@ -2,6 +2,8 @@
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
 
+
+
 O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (professores Eduardo Finotti e Hebert Soares).
 
 Todos os testes e a estrutura deste repositório foram criados por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando **Android Studio**, **WSL (Linux)** e **Maestro**.
