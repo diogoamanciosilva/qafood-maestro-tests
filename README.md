@@ -217,7 +217,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 ## 🔍 2. Feature Lojas
 
-Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.**.
+Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.
 
 **A) 1. Acesso básico à tela de Lojas**
 
