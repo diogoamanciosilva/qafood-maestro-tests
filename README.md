@@ -185,29 +185,36 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 <img width="503" height="267" alt="image" src="https://github.com/user-attachments/assets/852c6fb0-860e-42e2-9fee-c8c8d6541a7f" />
 
+
 **B) 2. Validação de formato e conteúdo**
 
 <img width="451" height="266" alt="image" src="https://github.com/user-attachments/assets/e3c000d8-16fe-490c-8aad-40d301beb1e1" />
+
 
 **C) 3. Validação de senha**
 
 <img width="470" height="145" alt="image" src="https://github.com/user-attachments/assets/62fa7c72-5181-444e-8b21-303b5311c45b" />
 
+
 **D) 4. Correção e recuperação de erro**
 
 <img width="398" height="57" alt="image" src="https://github.com/user-attachments/assets/91be85aa-47fd-4ec0-b386-ba0c102ad6f0" />
+
 
 **E) 5. Interações com teclado e sistema operacional**
 
 <img width="480" height="60" alt="image" src="https://github.com/user-attachments/assets/cded17ec-009b-4a02-8cda-863faf4d5123" />
 
+
 **F) 6. Cliques repetidos e comportamento de interface**
 
 <img width="427" height="122" alt="image" src="https://github.com/user-attachments/assets/b6a28f50-c6b5-4ad2-b515-cb21eba3ce63" />
 
+
 **G) 7. Concorrência e condição de corrida**
 
 <img width="543" height="32" alt="image" src="https://github.com/user-attachments/assets/e77560ad-d207-4c6d-baf7-e8b12e7d4993" />
+
 
 **H) 8. Bloqueio por tentativas de senha**
 
