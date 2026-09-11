@@ -165,11 +165,11 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
-| **1. Login** | Autenticação, campos, erros de validação e comportamento do botão de acesso | Ponto de entrada — “quero acessar o app” |
-| **2. Lojas** | Listagem, busca, navegação e permissão de localização | “Onde quero pedir?” |
-| **3. Cardápio** | Produtos, carrinho, contador e navegação dentro do restaurante | “O que vou comer?” |
-| **4. Sacola** | Gerenciamento do carrinho, subtotal e persistência | “Revisar minha compra” |
-| **5. Pedido** | Confirmação, pagamento, finalização e acompanhamento | “Confirmar, pagar e receber” |
+| **1.Login** | Autenticação, campos, erros de validação e comportamento do botão de acesso | Ponto de entrada — “quero acessar o app” |
+| **2.Lojas** | Listagem, busca, navegação e permissão de localização | “Onde quero pedir?” |
+| **3.Cardápio** | Produtos, carrinho, contador e navegação dentro do restaurante | “O que vou comer?” |
+| **4.Sacola** | Gerenciamento do carrinho, subtotal e persistência | “Revisar minha compra” |
+| **5.Pedido** | Confirmação, pagamento, finalização e acompanhamento | “Confirmar, pagar e receber” |
 
 ---
 
