@@ -169,7 +169,7 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 ---
 
-## 1. Feature Login
+## 🔗 1. Feature Login
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos de testes**.
 
@@ -207,7 +207,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 ---
 
-## 2. Feature Lojas
+## 🔗 2. Feature Lojas
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.**.
 
