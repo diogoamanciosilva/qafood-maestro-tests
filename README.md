@@ -179,6 +179,8 @@ Valida o processo de autenticação e o comportamento dos campos e do botão de 
 
 https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
+## Subtópicos de testes - Feature Login
+
 **A) 1. Fluxo básico**
 
 Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
