@@ -12,9 +12,6 @@ O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de u
 
 **Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento**
 
-
-<img width="491" height="1012" alt="image" src="https://github.com/user-attachments/assets/af6ce742-905b-4a33-8054-f0ea06161441" />
-
 **Login**
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
 
