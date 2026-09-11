@@ -262,13 +262,15 @@ https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
 <img width="642" height="175" alt="image" src="https://github.com/user-attachments/assets/d356284d-0f6b-4488-9e8e-4aeab9b95ae5" />
 
 
-**H) 7. Casos de borda da busca:**
+**G) 7. Casos de borda da busca:**
 
-Apenas espaços em branco, caracteres especiais/números isolados ou misturados com nome válido.
+<img width="560" height="82" alt="image" src="https://github.com/user-attachments/assets/d26038cd-5bfe-40e6-81da-16cd622055fe" />
 
-**8. Persistência e ciclo de vida do aplicativo:**
 
-Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequência.
+**H) 8. Persistência e ciclo de vida do aplicativo:**
+
+<img width="492" height="56" alt="image" src="https://github.com/user-attachments/assets/21071b80-9a43-493c-a53d-d9d46bedae91" />
+
 
 ---
 
