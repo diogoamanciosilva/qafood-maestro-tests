@@ -286,9 +286,14 @@ https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
 
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos de testes**.
 
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela das Lojas:**
+
+__INSERIR VÍDEO__
+
+## 📍 Subtópicos de testes - Feature Cardápio
+
+
 **A) 1. Acesso e carregamento básico do cardápio**
-
-
 
 <img width="568" height="120" alt="image" src="https://github.com/user-attachments/assets/3365606a-167b-4bb3-be49-4a371295f129" />
 
@@ -332,6 +337,12 @@ Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em *
 ## 🔍 4. Feature Sacola (Carrinho)
 
 Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
+
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela da Sacola (Carrinho):**
+
+__INSERIR VÍDEO__
+
+## 📍 Subtópicos de testes - Feature Sacola (Carrinho)
 
 **A) 1. Operações básicas da Sacola**
 
@@ -378,6 +389,12 @@ Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 ## 🔍 5. Feature Pedido
 
 Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos de testes**.
+
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Pedido:**
+
+__INSERIR VÍDEO__
+
+## 📍 Subtópicos de testes - Feature Pedido
 
 **A) 1. Acesso e confirmação básica do pedido**
 
