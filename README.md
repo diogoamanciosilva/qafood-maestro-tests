@@ -232,35 +232,41 @@ https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
 
 ## 📍 Subtópicos de testes - Feature Lojas
 
-**A) 1. Acesso básico à tela de Lojas**
+**A) 1. Acesso básico à tela de Lojas:**
 
-Login com acesso à lista, abertura de cardápio e scroll inicial.
+<img width="480" height="91" alt="image" src="https://github.com/user-attachments/assets/ce33c954-46e8-4d1e-8aae-04aa6f559411" />
 
-**B) 2. Navegação e visualização da lista**
 
-Scroll até cada restaurante individualmente e até o fim da lista.
+**B) 2. Navegação e visualização da lista:**
 
-**C) 3. Permissão e seleção de endereço**
+<img width="458" height="178" alt="image" src="https://github.com/user-attachments/assets/05a42e26-f733-47f6-ad06-6a59f09fd73c" />
 
-Abertura do modal, permitir, cancelar e preenchimento automático do endereço.
 
-**D) 4. Busca básica**
+**C) 3. Permissão e seleção de endereço:**
 
-Busca por caractere único, termo parcial, restaurante inexistente e limpeza da busca para nova pesquisa.
+<img width="553" height="120" alt="image" src="https://github.com/user-attachments/assets/192bb61f-3c25-4f7d-8792-df28e1500743" />
 
-**E) 5. Busca por restaurantes específicos**
 
-Busca pelo nome exato de cada um dos 6 restaurantes cadastrados.
+**D) 4. Busca básica:**
 
-**F) 6. Busca com espaços e capitalização**
+<img width="608" height="147" alt="image" src="https://github.com/user-attachments/assets/2b1c3255-9eb0-4a0c-b0eb-4f8de8da7856" />
 
-Espaços nas pontas e matriz completa de maiúsculas/minúsculas: total, parcial por palavra e mista.
 
-**H) 7. Casos de borda da busca**
+**E) 5. Busca por restaurantes específicos:**
+
+<img width="387" height="178" alt="image" src="https://github.com/user-attachments/assets/88299dfb-1ccb-4884-ae62-dff02502f31f" />
+
+
+**F) 6. Busca com espaços e capitalização:**
+
+<img width="642" height="175" alt="image" src="https://github.com/user-attachments/assets/d356284d-0f6b-4488-9e8e-4aeab9b95ae5" />
+
+
+**H) 7. Casos de borda da busca:**
 
 Apenas espaços em branco, caracteres especiais/números isolados ou misturados com nome válido.
 
-**8. Persistência e ciclo de vida do aplicativo**
+**8. Persistência e ciclo de vida do aplicativo:**
 
 Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequência.
 
