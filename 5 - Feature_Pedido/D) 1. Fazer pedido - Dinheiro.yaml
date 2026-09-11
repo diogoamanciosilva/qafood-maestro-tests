@@ -1,3 +1,5 @@
+# 4. Realização do pedido por diferentes formas de pagamento
+
 appId: com.qazandoqafood
 ---
 - runFlow:
@@ -34,7 +36,7 @@ appId: com.qazandoqafood
     element: "Dinheiro"
     direction: DOWN
 - assertVisible: "Dinheiro"
-- tapOn: "Cartão de crédito"
+- tapOn: "Dinheiro"
 - scrollUntilVisible:
     element: "Endereço"
     direction: DOWN
