@@ -346,7 +346,9 @@ Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela da Sacola (Carrinho):**
 
-__INSERIR VÍDEO__
+
+https://github.com/user-attachments/assets/3f4048d3-6048-42c7-8816-c6c342fe4bcc
+
 
 ## 📍 Subtópicos de testes - Feature Sacola (Carrinho)
 
