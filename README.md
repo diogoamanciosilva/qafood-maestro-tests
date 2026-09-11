@@ -183,7 +183,8 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 **A) 1. Fluxo básico**
 
-<img width="533" height="301" alt="image" src="https://github.com/user-attachments/assets/be38e303-7d87-49f9-9033-82e5b3f14bfb" />
+<img width="527" height="297" alt="image" src="https://github.com/user-attachments/assets/82f1b4a2-4a46-4464-8997-b9e434f78e8a" />
+
 
 
 Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
