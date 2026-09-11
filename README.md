@@ -175,7 +175,7 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos de testes**.
 
-Abaixo um vídeo demonstrativo de um dos cenários de login:
+**Abaixo um vídeo demonstrativo de um dos cenários de testes de Login:**
 
 https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
