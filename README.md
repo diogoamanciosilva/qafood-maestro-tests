@@ -288,31 +288,44 @@ Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em *
 
 **A) 1. Acesso e carregamento básico do cardápio**
 
-Acesso a diferentes restaurantes, bloqueio sem endereço selecionado e permissão de localização não solicitada novamente.
+
+
+<img width="568" height="120" alt="image" src="https://github.com/user-attachments/assets/3365606a-167b-4bb3-be49-4a371295f129" />
+
 
 **B) 2. Validação dos elementos do cardápio**
 
-Cabeçalho do restaurante, nome/preço/descrição do item e carrinho vazio ao abrir.
+
+
+<img width="495" height="88" alt="image" src="https://github.com/user-attachments/assets/636d5765-14be-455f-b227-6c69117b01b6" />
+
 
 **C) 3. Navegação dentro e fora do cardápio**
 
-Scroll para baixo e para cima e retorno à tela anterior, tanto pelo botão da interface quanto pelo botão físico **Voltar**.
+
+<img width="505" height="87" alt="image" src="https://github.com/user-attachments/assets/02fd2a7b-580b-41ba-89ed-74f101d7602e" />
+
 
 **D) 4. Adição de um produto ao carrinho**
 
-Adicionar um item, confirmar o contador e validar sua persistência ao sair da página.
+<img width="638" height="57" alt="image" src="https://github.com/user-attachments/assets/7ca5bfe1-acd3-40de-b049-d579615a8d26" />
+
 
 **E) 5. Adição e persistência de múltiplos produtos**
 
-Adicionar vários itens, validar a persistência de todos ao sair e verificar ausência de duplicação/perda após idas e vindas.
+
+<img width="692" height="92" alt="image" src="https://github.com/user-attachments/assets/b4aa6db4-a1d2-406e-a357-e57dd12b0d09" />
+
 
 **F) 6. Persistência do estado em diferentes condições**
 
-Contador de produtos mantido após rotação de tela.
+<img width="496" height="25" alt="image" src="https://github.com/user-attachments/assets/9ee55c16-81e4-4f47-9f32-f0511efa620e" />
+
 
 **G) 7. Cenário de concorrência / múltiplas ações rápidas**
 
-Duplo toque rápido no botão de adicionar.
+
+<img width="587" height="30" alt="image" src="https://github.com/user-attachments/assets/40c36103-245c-43fe-8f1f-a6ce549084c3" />
 
 ---
 
