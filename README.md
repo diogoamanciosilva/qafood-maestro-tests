@@ -157,7 +157,7 @@ Os testes não validam apenas funcionalidades isoladas, mas também simulam comp
 
 As informações a seguir apresentam a estrutura completa da suíte de testes do qaFood, organizada em cinco Features que representam, em sequência, a jornada do usuário no aplicativo. Cada Feature possui um conjunto de subtópicos que agrupa os cenários por funcionalidade e nível crescente de complexidade, permitindo visualizar de forma clara o que é validado em cada etapa, desde o login até a finalização e o acompanhamento do pedido.
 
-## Features
+## Features 
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
@@ -169,39 +169,39 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 ---
 
-**1. Feature Login**
+## 1. Feature Login
 
-Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos**.
+Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos de testes**.
 
 **A) 1. Fluxo básico**
 
 Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
 
-### #B) 2. Validação de formato e conteúdo
+**B) 2. Validação de formato e conteúdo**
 
 E-mail não cadastrado, espaços em branco isolados ou combinados, espaços nas pontas, maiúsculas e caracteres especiais (`+` e apóstrofo).
 
-### #C) 3. Validação de senha
+**C) 3. Validação de senha**
 
 Senha incorreta, maiúsculas na senha e limites de tamanho (e-mail e senha muito longos).
 
-### #D) 4. Correção e recuperação de erro
+**D) 4. Correção e recuperação de erro
 
 Correção do e-mail antes do envio e correção da senha após um erro até conseguir entrar.
 
-### #E) 5. Interações com teclado e sistema operacional
+**E) 5. Interações com teclado e sistema operacional**
 
 Tecla **Enter/Done**, rotação de tela durante o preenchimento e retorno do aplicativo após ida para segundo plano.
 
-### #F) 6. Cliques repetidos e comportamento de interface
+**F) 6. Cliques repetidos e comportamento de interface**
 
 Duplo clique sequencial, cliques fixos e cliques repetidos até erro, com e sem confirmação.
 
-### #G) 7. Concorrência e condição de corrida
+**G) 7. Concorrência e condição de corrida**
 
 Duplo toque simultâneo no botão **Entrar**.
 
-### #H) 8. Bloqueio por tentativas de senha
+**H) 8. Bloqueio por tentativas de senha**
 
 Mesma conta e contas diferentes com senha errada em sequência, além do reforço do teste de campo vazio.
 
