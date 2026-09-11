@@ -286,7 +286,7 @@ https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
 
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos de testes**.
 
-**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela das Lojas:**
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Cardápio:**
 
 __INSERIR VÍDEO__
 
