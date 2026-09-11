@@ -335,31 +335,43 @@ Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 
 **A) 1. Operações básicas da Sacola**
 
-Abrir vazia, abrir após adicionar, adicionar e remover e adicionar o mesmo item duas vezes.
+
+<img width="662" height="122" alt="image" src="https://github.com/user-attachments/assets/b7f63ee8-240a-451e-849e-98a62885bdda" />
+
 
 **B) 2. Cálculo/subtotal**
 
-Soma dos itens adicionados e soma quando o mesmo item é duplicado.
+<img width="552" height="57" alt="image" src="https://github.com/user-attachments/assets/125bc761-00f3-468e-9806-cd19b8877c10" />
+
 
 **C) 3. Navegação entre Sacola e Cardápio**
 
-Retorno ao cardápio preservando o item e adição de um segundo produto diferente após o retorno.
+
+<img width="683" height="65" alt="image" src="https://github.com/user-attachments/assets/d5763925-dc3f-4937-875e-10139f452e72" />
+
 
 **D) 4. Cancelamento**
 
-Desistir da limpeza da sacola e desistir da remoção de um item.
+<img width="637" height="57" alt="image" src="https://github.com/user-attachments/assets/0e3c83b5-03cf-4778-a695-6a2c53e7e449" />
+
 
 **E) 5. Limpeza da Sacola**
 
-Limpar com produtos diferentes, botão **Limpar** habilitado mesmo vazio e readicionar item pelo botão **“Adicionar itens”**.
+
+<img width="593" height="60" alt="image" src="https://github.com/user-attachments/assets/b9e7bb64-1220-4581-a34a-6b5ca7712491" />
+
 
 **F) 6. Múltiplos produtos e preservação de estado**
 
-Três itens diferentes com subtotal correto e botão físico **Voltar** preservando os itens.
+
+<img width="612" height="53" alt="image" src="https://github.com/user-attachments/assets/e6f55658-be0b-4c4c-8253-b3db5174ff87" />
+
 
 **G) 7. Comportamento do aplicativo**
 
-Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao fechar/reabrir o aplicativo.
+
+<img width="442" height="50" alt="image" src="https://github.com/user-attachments/assets/e691f621-42c0-42f4-baa2-1745dfe9889b" />
+
 
 ---
 
