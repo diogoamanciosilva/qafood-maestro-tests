@@ -173,35 +173,35 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos**.
 
-### #1. Fluxo básico
+### #A) 1. Fluxo básico
 
 Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
 
-### #2. Validação de formato e conteúdo
+### #B) 2. Validação de formato e conteúdo
 
 E-mail não cadastrado, espaços em branco isolados ou combinados, espaços nas pontas, maiúsculas e caracteres especiais (`+` e apóstrofo).
 
-### #3. Validação de senha
+### #C) 3. Validação de senha
 
 Senha incorreta, maiúsculas na senha e limites de tamanho (e-mail e senha muito longos).
 
-### #4. Correção e recuperação de erro
+### #D) 4. Correção e recuperação de erro
 
 Correção do e-mail antes do envio e correção da senha após um erro até conseguir entrar.
 
-### #5. Interações com teclado e sistema operacional
+### #E) 5. Interações com teclado e sistema operacional
 
 Tecla **Enter/Done**, rotação de tela durante o preenchimento e retorno do aplicativo após ida para segundo plano.
 
-### #6. Cliques repetidos e comportamento de interface
+### #F) 6. Cliques repetidos e comportamento de interface
 
 Duplo clique sequencial, cliques fixos e cliques repetidos até erro, com e sem confirmação.
 
-### #7. Concorrência e condição de corrida
+### #G) 7. Concorrência e condição de corrida
 
 Duplo toque simultâneo no botão **Entrar**.
 
-### #8. Bloqueio por tentativas de senha
+### #H) 8. Bloqueio por tentativas de senha
 
 Mesma conta e contas diferentes com senha errada em sequência, além do reforço do teste de campo vazio.
 
@@ -211,31 +211,31 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos**.
 
-### #1. Acesso básico à tela de Lojas
+### #A) 1. Acesso básico à tela de Lojas
 
 Login com acesso à lista, abertura de cardápio e scroll inicial.
 
-### #2. Navegação e visualização da lista
+### #B) 2. Navegação e visualização da lista
 
 Scroll até cada restaurante individualmente e até o fim da lista.
 
-### #3. Permissão e seleção de endereço
+### #C) 3. Permissão e seleção de endereço
 
 Abertura do modal, permitir, cancelar e preenchimento automático do endereço.
 
-### #4. Busca básica
+### #D) 4. Busca básica
 
 Busca por caractere único, termo parcial, restaurante inexistente e limpeza da busca para nova pesquisa.
 
-### #5. Busca por restaurantes específicos
+### #E) 5. Busca por restaurantes específicos
 
 Busca pelo nome exato de cada um dos 6 restaurantes cadastrados.
 
-### #6. Busca com espaços e capitalização
+### #F) 6. Busca com espaços e capitalização
 
 Espaços nas pontas e matriz completa de maiúsculas/minúsculas: total, parcial por palavra e mista.
 
-### #7. Casos de borda da busca
+### #H) 7. Casos de borda da busca
 
 Apenas espaços em branco, caracteres especiais/números isolados ou misturados com nome válido.
 
@@ -317,31 +317,31 @@ Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao f
 
 Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos**.
 
-### #1. Acesso e confirmação básica do pedido
+### #A) 1. Acesso e confirmação básica do pedido
 
 Subtotal, taxa de entrega e total com um item, além da soma correta com múltiplos itens.
 
-### #2. Validação de dados e condições obrigatórias
+### #B) 2. Validação de dados e condições obrigatórias
 
 Alerta sem forma de pagamento selecionada, cupom vazio e cupom inválido.
 
-### #3. Cancelamento da finalização e preservação do carrinho
+### #C) 3. Cancelamento da finalização e preservação do carrinho
 
 Voltar da tela de confirmação sem finalizar, mantendo o carrinho intacto.
 
-### #4. Realização do pedido por diferentes formas de pagamento
+### #D) 4. Realização do pedido por diferentes formas de pagamento
 
 Pedido com **Dinheiro** e com **Cartão de crédito**, incluindo confirmação de sucesso.
 
-### #5. Validação completa do pedido realizado
+### #E) 5. Validação completa do pedido realizado
 
 Conferência de todos os dados da tela de acompanhamento: status, previsão, endereço, pagamento e total.
 
-### #6. Navegação após a conclusão do pedido
+### #F) 6. Navegação após a conclusão do pedido
 
 Retorno à página de **Lojas** após finalizar o pedido.
 
-### #7. Persistência do estado após alteração de orientação
+### #G) 7. Persistência do estado após alteração de orientação
 
 Rotação de tela na tela de acompanhamento após a conclusão do pedido.
 
