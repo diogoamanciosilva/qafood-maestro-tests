@@ -169,11 +169,11 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 ---
 
-# 1. Feature Login
+**1. Feature Login**
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos**.
 
-### #A) 1. Fluxo básico
+**A) 1. Fluxo básico**
 
 Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
 
