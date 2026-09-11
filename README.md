@@ -183,7 +183,7 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 **A) 1. Fluxo básico**
 
-<img width="496" height="267" alt="image" src="https://github.com/user-attachments/assets/1755e240-fdea-44ca-ac44-fd6dbb62bf90" />
+<img width="503" height="267" alt="image" src="https://github.com/user-attachments/assets/852c6fb0-860e-42e2-9fee-c8c8d6541a7f" />
 
 **B) 2. Validação de formato e conteúdo**
 
