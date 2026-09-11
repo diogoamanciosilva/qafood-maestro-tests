@@ -175,7 +175,7 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos de testes**.
 
-**Abaixo um vídeo demonstrativo de um dos cenários de testes de Login:**
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Login:**
 
 https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
@@ -225,6 +225,12 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 ## 🔍 2. Feature Lojas
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.
+
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela das Lojas:**
+
+https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
+
+## 📍 Subtópicos de testes - Feature Lojas
 
 **A) 1. Acesso básico à tela de Lojas**
 
