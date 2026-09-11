@@ -17,6 +17,7 @@ O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de u
 
 
 
+
 ---
 
 ## 🛠️ Ambiente e rotina diária
