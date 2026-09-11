@@ -185,7 +185,7 @@ E-mail não cadastrado, espaços em branco isolados ou combinados, espaços nas 
 
 Senha incorreta, maiúsculas na senha e limites de tamanho (e-mail e senha muito longos).
 
-**D) 4. Correção e recuperação de erro
+**D) 4. Correção e recuperação de erro**
 
 Correção do e-mail antes do envio e correção da senha após um erro até conseguir entrar.
 
