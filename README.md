@@ -1,4 +1,4 @@
-# 🤖 qaFood — Testes Automatizados com Maestro
+# 😋 qaFood — Testes Automatizados com Maestro
 
 Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (professores Eduardo Finotti e Hebert Soares).
 
