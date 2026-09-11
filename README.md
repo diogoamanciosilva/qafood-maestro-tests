@@ -183,11 +183,7 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 **A) 1. Fluxo básico**
 
-<img width="527" height="297" alt="image" src="https://github.com/user-attachments/assets/82f1b4a2-4a46-4464-8997-b9e434f78e8a" />
-
-
-
-Login com credenciais corretas, campos vazios (e-mail, senha ou ambos) e bloqueio de envio correspondente.
+<img width="496" height="267" alt="image" src="https://github.com/user-attachments/assets/1755e240-fdea-44ca-ac44-fd6dbb62bf90" />
 
 **B) 2. Validação de formato e conteúdo**
 
