@@ -381,31 +381,41 @@ Valida a confirmação e a finalização do pedido, organizada em **7 subtópico
 
 **A) 1. Acesso e confirmação básica do pedido**
 
-Subtotal, taxa de entrega e total com um item, além da soma correta com múltiplos itens.
+<img width="602" height="61" alt="image" src="https://github.com/user-attachments/assets/6c969ce5-f368-4a82-8cb9-035728643967" />
+
 
 **B) 2. Validação de dados e condições obrigatórias**
 
-Alerta sem forma de pagamento selecionada, cupom vazio e cupom inválido.
+
+<img width="672" height="90" alt="image" src="https://github.com/user-attachments/assets/809e6f43-189e-48e8-8f09-be35bae40b48" />
+
 
 **C) 3. Cancelamento da finalização e preservação do carrinho**
 
-Voltar da tela de confirmação sem finalizar, mantendo o carrinho intacto.
+
+<img width="513" height="31" alt="image" src="https://github.com/user-attachments/assets/3b449fe0-20ce-48be-aefc-b9db32b959d0" />
+
 
 **D) 4. Realização do pedido por diferentes formas de pagamento**
 
-Pedido com **Dinheiro** e com **Cartão de crédito**, incluindo confirmação de sucesso.
+
+<img width="603" height="93" alt="image" src="https://github.com/user-attachments/assets/3268d0f5-10b2-4eef-a169-0060ee6f284a" />
+
 
 **E) 5. Validação completa do pedido realizado**
 
-Conferência de todos os dados da tela de acompanhamento: status, previsão, endereço, pagamento e total.
+<img width="462" height="27" alt="image" src="https://github.com/user-attachments/assets/1b92901a-7bf2-40dd-a952-9ec07f1cfc63" />
+
 
 **F) 6. Navegação após a conclusão do pedido**
 
-Retorno à página de **Lojas** após finalizar o pedido.
+<img width="488" height="36" alt="image" src="https://github.com/user-attachments/assets/24bb89a5-b36d-473e-b914-565f31f6ad98" />
+
 
 **G) 7. Persistência do estado após alteração de orientação**
 
-Rotação de tela na tela de acompanhamento após a conclusão do pedido.
+
+<img width="443" height="32" alt="image" src="https://github.com/user-attachments/assets/179e40f6-a924-4d58-b5d3-ad6d1ddc9d98" />
 
 ---
 
