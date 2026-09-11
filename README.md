@@ -129,6 +129,7 @@ Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
 ```
 Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de um aplicativo de delivery.
 
+As informações a seguir apresentam a estrutura completa da suíte de testes do qaFood, organizada em cinco Features que representam, em sequência, a jornada do usuário no aplicativo. Cada Feature possui um conjunto de subtópicos que agrupa os cenários por funcionalidade e nível crescente de complexidade, permitindo visualizar de forma clara o que é validado em cada etapa, desde o login até a finalização e o acompanhamento do pedido
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
@@ -139,19 +140,61 @@ Dessa forma, os testes não validam apenas funcionalidades isoladas, mas também
 |**5.Pedido** | Confirmação, pagamento, finalização, acompanhamento | "Confirmar, pagar e receber" |
 
 ### 1. Feature Login
-Valida o processo de autenticação e o comportamento dos campos e botão de acesso: campos vazios, credenciais inválidas, formatos de e-mail, sensibilidade a maiúsculas/minúsculas, espaços em branco, limites de caracteres, caminho feliz, recuperação de erro, cliques múltiplos/duplo toque, tentativas repetidas de senha incorreta, e interações com o sistema operacional (Enter, Home, background, rotação de tela).
+Valida o processo de autenticação e o comportamento dos campos e botão de acesso, organizado em 8 subtópicos:
+
+#1. Fluxo básico — login com credenciais corretas, campos vazios (e-mail, senha, ou ambos) e bloqueio de envio correspondente.
+#2. Validação de formato e conteúdo — e-mail não cadastrado, espaços em branco isolados ou combinados, espaços nas pontas, maiúsculas, e caracteres especiais (+, apóstrofo).
+#3. Validação de senha — senha incorreta, maiúsculas na senha, e limites de tamanho (e-mail e senha muito longos).
+#4. Correção e recuperação de erro — corrigir o e-mail antes do envio, e corrigir a senha após um erro até conseguir entrar.
+#5. Interações com teclado e sistema operacional — tecla Enter/Done, rotação de tela durante o preenchimento, e retorno do app após ida para segundo plano.
+#6. Cliques repetidos e comportamento de interface — duplo clique sequencial, cliques fixos, e cliques repetidos até erro (com e sem confirmação).
+#7. Concorrência e condição de corrida — duplo toque simultâneo no botão Entrar.
+#8. Bloqueio por tentativas de senha — mesma conta e contas diferentes com senha errada em sequência, e reforço do teste de campo vazio.
 
 ### 2. Feature Lojas
-Valida exibição, navegação e pesquisa dos restaurantes: acesso à lista após login, scroll, localização de restaurantes específicos, busca por nome completo/parcial/inexistente, espaços em branco, caracteres especiais, sensibilidade a maiúsculas/minúsculas, buscas consecutivas, permissão de localização (aceitar/recusar/não solicitar novamente), e persistência de sessão após fechar/reabrir o app.
+Valida exibição, navegação e pesquisa dos restaurantes, organizada em 8 subtópicos:
+
+#1. Acesso básico à tela de Lojas — login com acesso à lista, abertura de cardápio, e scroll inicial.
+#2. Navegação e visualização da lista — scroll até cada restaurante individualmente e até o fim da lista.
+#3. Permissão e seleção de endereço — abertura do modal, permitir, cancelar, e preenchimento automático do endereço.
+#4. Busca básica — busca por caractere único, termo parcial, restaurante inexistente, e limpeza da busca para nova pesquisa.
+#5. Busca por restaurantes específicos — busca pelo nome exato de cada um dos 6 restaurantes cadastrados.
+#6. Busca com espaços e capitalização — espaços nas pontas, e a matriz completa de maiúsculas/minúsculas (total, parcial por palavra, e mista).
+#7. Casos de borda da busca — apenas espaços em branco, caracteres especiais/números isolados ou misturados com nome válido.
+#8. Persistência e ciclo de vida do aplicativo — sessão perdida ao fechar/reabrir o app, e re-login funcional na sequência.
 
 ### 3. Feature Cardápio
-Valida o acesso aos restaurantes e o comportamento dos produtos: acesso ao cardápio de diferentes restaurantes, bloqueio sem endereço selecionado, retorno à tela anterior, adição de um ou vários produtos, contador de produtos, produtos diferentes e duplicados, nome/preço/descrição, scroll, persistência de itens após navegação, manutenção do contador após rotação de tela, duplo toque rápido, e cabeçalho do restaurante.
+Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em 7 subtópicos:
+
+#1. Acesso e carregamento básico do cardápio — acesso a diferentes restaurantes, bloqueio sem endereço selecionado, e permissão de localização não solicitada novamente.
+#2. Validação dos elementos do cardápio — cabeçalho do restaurante, nome/preço/descrição do item, e carrinho vazio ao abrir.
+#3. Navegação dentro e fora do cardápio — scroll para baixo e para cima, e retorno à tela anterior (via botão da UI e via botão físico Voltar).
+#4. Adição de um produto ao carrinho — adicionar um item, confirmar contador, e persistência ao sair da página.
+#5. Adição e persistência de múltiplos produtos — adicionar vários itens, persistência de todos ao sair, e ausência de duplicação/perda após idas e vindas.
+#6. Persistência do estado em diferentes condições — contador mantido após rotação de tela.
+#7. Cenário de concorrência / múltiplas ações rápidas — duplo toque rápido no botão de adicionar.
 
 ### 4. Feature Sacola (Carrinho)
-Valida o funcionamento do carrinho: abrir com/sem produtos, adicionar o mesmo produto múltiplas vezes, quantidade e preço, adicionar/remover, confirmar/cancelar limpeza, produtos diferentes, retorno ao cardápio sem perder itens, botão Limpar com carrinho vazio, readicionar itens, rotação de tela, e cálculo de subtotal em diferentes combinações.
+Valida o funcionamento do carrinho, organizada em 7 subtópicos:
+
+#1. Operações básicas da Sacola — abrir vazia, abrir após adicionar, adicionar e remover, e adicionar o mesmo item duas vezes.
+#2. Cálculo/subtotal — soma dos itens adicionados, e soma quando o mesmo item é duplicado.
+#3. Navegação entre Sacola e Cardápio — retorno ao cardápio preservando o item, e adição de um segundo produto diferente após o retorno.
+#4. Cancelamento — desistir da limpeza da sacola, e desistir da remoção de um item.
+#5. Limpeza da Sacola — limpar com produtos diferentes, botão Limpar habilitado mesmo vazio, e readicionar item via botão "Adicionar itens".
+#6. Múltiplos produtos e preservação de estado — três itens diferentes com subtotal correto, e botão físico Voltar preservando os itens.
+#7. Comportamento do aplicativo — rotação de tela, perda de sessão de login, e perda do conteúdo da sacola ao fechar/reabrir o app.
 
 ### 5. Feature Pedido
-Valida a confirmação e finalização do pedido: cupom inválido/vazio, subtotal/taxa de entrega/total, produtos no pedido, formas de pagamento (cartão de crédito, dinheiro), alerta ao tentar finalizar sem forma de pagamento, tela de "Pedido realizado" (previsão de entrega, status, endereço, detalhes, pagamento, total), retorno à tela de Lojas, rotação de tela pós-conclusão, e retorno da confirmação sem finalizar (carrinho permanece intacto).
+Valida a confirmação e finalização do pedido, organizada em 7 subtópicos:
+
+#1. Acesso e confirmação básica do pedido — subtotal/taxa/total com um item, e soma correta com múltiplos itens.
+#2. Validação de dados e condições obrigatórias — alerta sem forma de pagamento selecionada, cupom vazio, e cupom inválido.
+#3. Cancelamento da finalização e preservação do carrinho — voltar da tela de confirmação sem finalizar, mantendo o carrinho intacto.
+#4. Realização do pedido por diferentes formas de pagamento — pedido com Dinheiro e com Cartão de crédito, incluindo confirmação de sucesso.
+#5. Validação completa do pedido realizado — conferência de todos os dados da tela de acompanhamento (status, previsão, endereço, pagamento, total).
+#6. Navegação após a conclusão do pedido — retorno à página de Lojas após finalizar.
+#7. Persistência do estado após alteração de orientação — rotação de tela na tela de acompanhamento pós-conclusão.
 
 ---
 
