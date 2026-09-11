@@ -8,12 +8,14 @@ Todos os testes e a estrutura deste repositório foram criados por **Diogo Amanc
 
 ## 📱 Sobre o app
 
+<img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
+
 O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário:
 
 **Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento**
 
-**Login**
-<img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
+
+
 
 ---
 
