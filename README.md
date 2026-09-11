@@ -234,40 +234,48 @@ https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
 
 **A) 1. Acesso básico à tela de Lojas:**
 
+
 <img width="480" height="91" alt="image" src="https://github.com/user-attachments/assets/ce33c954-46e8-4d1e-8aae-04aa6f559411" />
 
 
 **B) 2. Navegação e visualização da lista:**
+
 
 <img width="458" height="178" alt="image" src="https://github.com/user-attachments/assets/05a42e26-f733-47f6-ad06-6a59f09fd73c" />
 
 
 **C) 3. Permissão e seleção de endereço:**
 
+
 <img width="553" height="120" alt="image" src="https://github.com/user-attachments/assets/192bb61f-3c25-4f7d-8792-df28e1500743" />
 
 
 **D) 4. Busca básica:**
+
 
 <img width="608" height="147" alt="image" src="https://github.com/user-attachments/assets/2b1c3255-9eb0-4a0c-b0eb-4f8de8da7856" />
 
 
 **E) 5. Busca por restaurantes específicos:**
 
+
 <img width="387" height="178" alt="image" src="https://github.com/user-attachments/assets/88299dfb-1ccb-4884-ae62-dff02502f31f" />
 
 
 **F) 6. Busca com espaços e capitalização:**
+
 
 <img width="642" height="175" alt="image" src="https://github.com/user-attachments/assets/d356284d-0f6b-4488-9e8e-4aeab9b95ae5" />
 
 
 **G) 7. Casos de borda da busca:**
 
+
 <img width="560" height="82" alt="image" src="https://github.com/user-attachments/assets/d26038cd-5bfe-40e6-81da-16cd622055fe" />
 
 
 **H) 8. Persistência e ciclo de vida do aplicativo:**
+
 
 <img width="492" height="56" alt="image" src="https://github.com/user-attachments/assets/21071b80-9a43-493c-a53d-d9d46bedae91" />
 
