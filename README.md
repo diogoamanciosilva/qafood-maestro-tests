@@ -145,7 +145,7 @@ Cada teste que depende de login reutiliza o mesmo flow base por meio de `runFlow
 
 ---
 
-## 🧭 A jornada do usuário
+## 🧭 A Jornada do usuário
 
 A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro do qaFood:
 
@@ -157,7 +157,7 @@ Os testes não validam apenas funcionalidades isoladas, mas também simulam comp
 
 As informações a seguir apresentam a estrutura completa da suíte de testes do qaFood, organizada em cinco Features que representam, em sequência, a jornada do usuário no aplicativo. Cada Feature possui um conjunto de subtópicos que agrupa os cenários por funcionalidade e nível crescente de complexidade, permitindo visualizar de forma clara o que é validado em cada etapa, desde o login até a finalização e o acompanhamento do pedido.
 
-### Features
+## Features
 
 | Feature | O que valida | Papel na jornada |
 |---|---|---|
