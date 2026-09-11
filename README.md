@@ -207,7 +207,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 ---
 
-# 2. Feature Lojas
+## 2. Feature Lojas
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos**.
 
@@ -215,133 +215,133 @@ Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 
 
 Login com acesso à lista, abertura de cardápio e scroll inicial.
 
-### #B) 2. Navegação e visualização da lista
+**B) 2. Navegação e visualização da lista**
 
 Scroll até cada restaurante individualmente e até o fim da lista.
 
-### #C) 3. Permissão e seleção de endereço
+**C) 3. Permissão e seleção de endereço**
 
 Abertura do modal, permitir, cancelar e preenchimento automático do endereço.
 
-### #D) 4. Busca básica
+**D) 4. Busca básica**
 
 Busca por caractere único, termo parcial, restaurante inexistente e limpeza da busca para nova pesquisa.
 
-### #E) 5. Busca por restaurantes específicos
+**E) 5. Busca por restaurantes específicos**
 
 Busca pelo nome exato de cada um dos 6 restaurantes cadastrados.
 
-### #F) 6. Busca com espaços e capitalização
+**F) 6. Busca com espaços e capitalização**
 
 Espaços nas pontas e matriz completa de maiúsculas/minúsculas: total, parcial por palavra e mista.
 
-### #H) 7. Casos de borda da busca
+**H) 7. Casos de borda da busca**
 
 Apenas espaços em branco, caracteres especiais/números isolados ou misturados com nome válido.
 
-### #8. Persistência e ciclo de vida do aplicativo
+**8. Persistência e ciclo de vida do aplicativo**
 
 Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequência.
 
 ---
 
-# 3. Feature Cardápio
+## 3. Feature Cardápio
 
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos**.
 
-### #A) 1. Acesso e carregamento básico do cardápio
+**A) 1. Acesso e carregamento básico do cardápio**
 
 Acesso a diferentes restaurantes, bloqueio sem endereço selecionado e permissão de localização não solicitada novamente.
 
-### #B) 2. Validação dos elementos do cardápio
+**B) 2. Validação dos elementos do cardápio**
 
 Cabeçalho do restaurante, nome/preço/descrição do item e carrinho vazio ao abrir.
 
-### #C) 3. Navegação dentro e fora do cardápio
+**C) 3. Navegação dentro e fora do cardápio**
 
 Scroll para baixo e para cima e retorno à tela anterior, tanto pelo botão da interface quanto pelo botão físico **Voltar**.
 
-### #D) 4. Adição de um produto ao carrinho
+**D) 4. Adição de um produto ao carrinho**
 
 Adicionar um item, confirmar o contador e validar sua persistência ao sair da página.
 
-### #E) 5. Adição e persistência de múltiplos produtos
+**E) 5. Adição e persistência de múltiplos produtos**
 
 Adicionar vários itens, validar a persistência de todos ao sair e verificar ausência de duplicação/perda após idas e vindas.
 
-### #F) 6. Persistência do estado em diferentes condições
+**F) 6. Persistência do estado em diferentes condições**
 
 Contador de produtos mantido após rotação de tela.
 
-### #G) 7. Cenário de concorrência / múltiplas ações rápidas
+**G) 7. Cenário de concorrência / múltiplas ações rápidas**
 
 Duplo toque rápido no botão de adicionar.
 
 ---
 
-# 4. Feature Sacola (Carrinho)
+## 4. Feature Sacola (Carrinho)
 
 Valida o funcionamento do carrinho, organizada em **7 subtópicos**.
 
-### #A) 1. Operações básicas da Sacola
+**A) 1. Operações básicas da Sacola**
 
 Abrir vazia, abrir após adicionar, adicionar e remover e adicionar o mesmo item duas vezes.
 
-### #B) 2. Cálculo/subtotal
+**B) 2. Cálculo/subtotal**
 
 Soma dos itens adicionados e soma quando o mesmo item é duplicado.
 
-### #C) 3. Navegação entre Sacola e Cardápio
+**C) 3. Navegação entre Sacola e Cardápio**
 
 Retorno ao cardápio preservando o item e adição de um segundo produto diferente após o retorno.
 
-### #D) 4. Cancelamento
+**D) 4. Cancelamento**
 
 Desistir da limpeza da sacola e desistir da remoção de um item.
 
-### #E) 5. Limpeza da Sacola
+**E) 5. Limpeza da Sacola**
 
 Limpar com produtos diferentes, botão **Limpar** habilitado mesmo vazio e readicionar item pelo botão **“Adicionar itens”**.
 
-### #F) 6. Múltiplos produtos e preservação de estado
+**F) 6. Múltiplos produtos e preservação de estado**
 
 Três itens diferentes com subtotal correto e botão físico **Voltar** preservando os itens.
 
-### #G) 7. Comportamento do aplicativo
+**G) 7. Comportamento do aplicativo**
 
 Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao fechar/reabrir o aplicativo.
 
 ---
 
-# 5. Feature Pedido
+## 5. Feature Pedido
 
 Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos**.
 
-### #A) 1. Acesso e confirmação básica do pedido
+**A) 1. Acesso e confirmação básica do pedido**
 
 Subtotal, taxa de entrega e total com um item, além da soma correta com múltiplos itens.
 
-### #B) 2. Validação de dados e condições obrigatórias
+**B) 2. Validação de dados e condições obrigatórias**
 
 Alerta sem forma de pagamento selecionada, cupom vazio e cupom inválido.
 
-### #C) 3. Cancelamento da finalização e preservação do carrinho
+**C) 3. Cancelamento da finalização e preservação do carrinho**
 
 Voltar da tela de confirmação sem finalizar, mantendo o carrinho intacto.
 
-### #D) 4. Realização do pedido por diferentes formas de pagamento
+**D) 4. Realização do pedido por diferentes formas de pagamento**
 
 Pedido com **Dinheiro** e com **Cartão de crédito**, incluindo confirmação de sucesso.
 
-### #E) 5. Validação completa do pedido realizado
+**E) 5. Validação completa do pedido realizado**
 
 Conferência de todos os dados da tela de acompanhamento: status, previsão, endereço, pagamento e total.
 
-### #F) 6. Navegação após a conclusão do pedido
+**F) 6. Navegação após a conclusão do pedido**
 
 Retorno à página de **Lojas** após finalizar o pedido.
 
-### #G) 7. Persistência do estado após alteração de orientação
+**G) 7. Persistência do estado após alteração de orientação**
 
 Rotação de tela na tela de acompanhamento após a conclusão do pedido.
 
