@@ -249,31 +249,31 @@ Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequênci
 
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos**.
 
-### #1. Acesso e carregamento básico do cardápio
+### #A) 1. Acesso e carregamento básico do cardápio
 
 Acesso a diferentes restaurantes, bloqueio sem endereço selecionado e permissão de localização não solicitada novamente.
 
-### #2. Validação dos elementos do cardápio
+### #B) 2. Validação dos elementos do cardápio
 
 Cabeçalho do restaurante, nome/preço/descrição do item e carrinho vazio ao abrir.
 
-### #3. Navegação dentro e fora do cardápio
+### #C) 3. Navegação dentro e fora do cardápio
 
 Scroll para baixo e para cima e retorno à tela anterior, tanto pelo botão da interface quanto pelo botão físico **Voltar**.
 
-### #4. Adição de um produto ao carrinho
+### #D) 4. Adição de um produto ao carrinho
 
 Adicionar um item, confirmar o contador e validar sua persistência ao sair da página.
 
-### #5. Adição e persistência de múltiplos produtos
+### #E) 5. Adição e persistência de múltiplos produtos
 
 Adicionar vários itens, validar a persistência de todos ao sair e verificar ausência de duplicação/perda após idas e vindas.
 
-### #6. Persistência do estado em diferentes condições
+### #F) 6. Persistência do estado em diferentes condições
 
 Contador de produtos mantido após rotação de tela.
 
-### #7. Cenário de concorrência / múltiplas ações rápidas
+### #G) 7. Cenário de concorrência / múltiplas ações rápidas
 
 Duplo toque rápido no botão de adicionar.
 
@@ -283,31 +283,31 @@ Duplo toque rápido no botão de adicionar.
 
 Valida o funcionamento do carrinho, organizada em **7 subtópicos**.
 
-### #1. Operações básicas da Sacola
+### #A) 1. Operações básicas da Sacola
 
 Abrir vazia, abrir após adicionar, adicionar e remover e adicionar o mesmo item duas vezes.
 
-### #2. Cálculo/subtotal
+### #B) 2. Cálculo/subtotal
 
 Soma dos itens adicionados e soma quando o mesmo item é duplicado.
 
-### #3. Navegação entre Sacola e Cardápio
+### #C) 3. Navegação entre Sacola e Cardápio
 
 Retorno ao cardápio preservando o item e adição de um segundo produto diferente após o retorno.
 
-### #4. Cancelamento
+### #D) 4. Cancelamento
 
 Desistir da limpeza da sacola e desistir da remoção de um item.
 
-### #5. Limpeza da Sacola
+### #E) 5. Limpeza da Sacola
 
 Limpar com produtos diferentes, botão **Limpar** habilitado mesmo vazio e readicionar item pelo botão **“Adicionar itens”**.
 
-### #6. Múltiplos produtos e preservação de estado
+### #F) 6. Múltiplos produtos e preservação de estado
 
 Três itens diferentes com subtotal correto e botão físico **Voltar** preservando os itens.
 
-### #7. Comportamento do aplicativo
+### #G) 7. Comportamento do aplicativo
 
 Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao fechar/reabrir o aplicativo.
 
