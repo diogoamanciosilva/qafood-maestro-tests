@@ -209,7 +209,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 ## 2. Feature Lojas
 
-Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos**.
+Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.**.
 
 **A) 1. Acesso básico à tela de Lojas**
 
@@ -247,7 +247,7 @@ Sessão perdida ao fechar/reabrir o aplicativo e re-login funcional na sequênci
 
 ## 3. Feature Cardápio
 
-Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos**.
+Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos de testes**.
 
 **A) 1. Acesso e carregamento básico do cardápio**
 
@@ -281,7 +281,7 @@ Duplo toque rápido no botão de adicionar.
 
 ## 4. Feature Sacola (Carrinho)
 
-Valida o funcionamento do carrinho, organizada em **7 subtópicos**.
+Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 
 **A) 1. Operações básicas da Sacola**
 
@@ -315,7 +315,7 @@ Rotação de tela, perda de sessão de login e perda do conteúdo da sacola ao f
 
 ## 5. Feature Pedido
 
-Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos**.
+Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos de testes**.
 
 **A) 1. Acesso e confirmação básica do pedido**
 
