@@ -211,7 +211,7 @@ Mesma conta e contas diferentes com senha errada em sequência, além do reforç
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos**.
 
-### #A) 1. Acesso básico à tela de Lojas
+**A) 1. Acesso básico à tela de Lojas**
 
 Login com acesso à lista, abertura de cardápio e scroll inicial.
 
