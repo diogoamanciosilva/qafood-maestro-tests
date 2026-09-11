@@ -16,6 +16,8 @@ O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de u
 
 **Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento**
 
+**Abaixo um vídeo demonstrativo de um cenário de teste end-to-end (E2E) do aplicativo qaFood:**
+
 https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 ---
